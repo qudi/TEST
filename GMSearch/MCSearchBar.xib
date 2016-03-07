@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MCSearchBar">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h3N-NH-l0q">
+                    <rect key="frame" x="16" y="7" width="383" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MCSearch_icon.png" id="AVu-LS-yIL">
+                    <rect key="frame" x="200" y="15" width="14" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="4V1-in-Hkh">
+                    <rect key="frame" x="16" y="7" width="383" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                </textField>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hoW-gb-Vce">
+                    <rect key="frame" x="360" y="7" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.25882352939999997" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickCancelBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="4fH-yc-sdN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94262941909999998" green="0.94262941909999998" blue="0.94262941909999998" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="custom_searchBar_bg" destination="h3N-NH-l0q" id="Cq3-t2-Gu2"/>
+                <outlet property="custom_searchBar_cancelBtn" destination="hoW-gb-Vce" id="AFc-hd-2T1"/>
+                <outlet property="custom_searchBar_pic" destination="AVu-LS-yIL" id="KqJ-bM-xdx"/>
+                <outlet property="seach_textField" destination="4V1-in-Hkh" id="fFu-Hx-o4u"/>
+            </connections>
+            <point key="canvasLocation" x="304" y="132"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MCSearch_icon.png" width="14" height="14"/>
+    </resources>
+</document>
